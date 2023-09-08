@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Правильное решение</title>
 </head>
-<body>
+<body class="bg-white">
     <header class="w-full relative bg-white py-6">
         <div class="container mx-auto px-5 flex items-center justify-between">
             <button class="lg:hidden flex flex-col z-30 justify-between w-[26px] transition-all ease-linear h-3.5" id="toggler">
@@ -39,6 +39,98 @@
         </div>
         <div id="overlay" class="w-full inset-0 bg-black/50 absolute z-10 hidden lg:hidden top-full h-screen">
     </header> 
+
+    <main class="w-full">
+        <div class="h-[638px] md:h-[700px] xl:h-[818px] bg-cover bg-center bg-[url(Assets/Images/systems/bg.png)] flex flex-col justify-center">
+            <div class="container mx-auto px-5 h-fit flex flex-col gap-7 md:gap-8 xl:gap-9 text-white">
+                <p class="font-semibold text-3xl md:text-5xl xl:text-[56px] max-w-[908px]">Инженерные Системы: Мастерство в каждой детале</p>
+                <p class="text-sm xl:text-base max-w-[878px]">На протяжении многих лет мы успешно воплощаем амбициозные проекты, где эффективность, надежность и современные технологии играют ключевую роль. Наша команда экспертов гарантирует, что каждая инженерная система, которую мы разрабатываем и устанавливаем, отвечает самым высоким стандартам качества.</p>
+                <a href="" class="bg-[#FA4F19] py-[15px] md:py-4 xl:py-[18px] px-9 md:px-10 xl:px-12 text-sm md:text-xl xl:text-[22px] rounded-[40px] w-fit font-medium">Узнать больше</a>
+            </div>
+        </div>
+        <div class="container mx-auto px-5 flex flex-col pt-[50px] md:pt-20 xl:pt-[110px] pb-[100px] md:pb-[140px] xl:pb-[180px] gap-[100px] md:gap-[140px] xl:gap-[180px]">
+            <div class="flex flex-col gap-5 lg:gap-4">
+                <p class="relative text-[#FA4F19] text-sm xl:text-base font-bold w-fit uppercase">
+                    <span>О нас</span>
+                    <span class="max-[1439px]:hidden w-[72px] h-0.5 bg-[#1D2130] absolute top-1/2 -translate-y-1/2 -left-24"></span>
+                </p>
+                <div class="flex max-lg:flex-col lg:items-center gap-5 md:gap-[70px] xl:gap-[115px]">
+                    <div class="flex flex-col gap-5 md:gap-7 xl:gap-9 lg:w-1/2 w-full">
+                        <p class="font-bold text-[#373737] text-3xl md:text-5xl xl:text-[56px]">Профессионализм и Инновации</p>
+                        <p class="text-sm xl:text-base text-[#838383]">Правильное Решение - это ведущий подрядчик в сфере оборудования инженерных систем, специализирующийся на комплексных решениях для строительных проектов различного масштаба и назначения. С нашим богатым опытом и профессиональной командой специалистов, мы готовы обеспечить клиентов высококачественным оборудованием, эффективными техническими решениями и надежным выполнением задач.</p>
+                    </div>
+                    <img src="Assets/Images/about/pc.png" alt="" class="w-full lg:w-1/2 max-md:hidden">
+                    <img src="Assets/Images/about/mobile.png" alt="" class="w-full md:hidden">
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 md:gap-7 xl:gap-8">
+                <p class="relative text-[#FA4F19] text-sm xl:text-base font-bold w-fit uppercase">
+                    <span>Этапы работы</span>
+                    <span class="max-[1439px]:hidden w-[72px] h-0.5 bg-[#1D2130] absolute top-1/2 -translate-y-1/2 -left-24"></span>
+                </p>
+                <div class="flex flex-col gap-10 xl:gap-12">
+                    <p class="font-bold text-[#373737] text-3xl md:text-5xl xl:text-[56px]">Монтаж инженерных коммуникаций включает в себя следующие этапы</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-y-12 md:gap-x-6 text-white">
+                        <div class="relative rounded-[10px] overflow-hidden">
+                            <p class="bg-white text-[#FA4F19] rounded-full font-semibold text-3xl md:text-4xl xl:text-6xl absolute top-2.5 w-10 h-10 left-2.5 xl:left-7 xl:w-14 xl:h-14 flex items-center justify-center">1</p>
+                            <img src="Assets/Images/stages/1.png" alt="">
+                            <div class="absolute flex flex-col bottom-7 w-full px-5 gap-4 xl:gap-6 z-[1]">
+                                <p class="text-xl xl:text-2xl">Планирование и проектирование.</p>
+                                <p class="text-sm xl:text-base">На этом этапе определяются требования к коммуникационным системам, разрабатывается схема их размещения, выбираются необходимые материалы и оборудование.</p>
+                            </div>
+                            <div class="absolute bottom-0 w-full h-full stages"></div>
+                        </div>
+                        <div class="relative rounded-[10px] overflow-hidden">
+                            <p class="bg-white text-[#FA4F19] rounded-full font-semibold text-3xl md:text-4xl xl:text-6xl absolute top-2.5 w-10 h-10 left-2.5 xl:left-7 xl:w-14 xl:h-14 flex items-center justify-center">2</p>
+                            <img src="Assets/Images/stages/2.png" alt="">
+                            <div class="absolute flex flex-col bottom-7 w-full px-5 gap-4 xl:gap-6 z-[1]">
+                                <p class="text-xl xl:text-2xl">Подготовительные работы.</p>
+                                <p class="text-sm xl:text-base">Включают в себя прокладку трасс коммуникаций, установку распределительных щитов, монтаж кабельных лотков и трубопроводов.</p>
+                            </div>
+                            <div class="absolute bottom-0 w-full h-full stages"></div>
+                        </div>
+                        <div class="relative rounded-[10px] overflow-hidden">
+                            <p class="bg-white text-[#FA4F19] rounded-full font-semibold text-3xl md:text-4xl xl:text-6xl absolute top-2.5 w-10 h-10 left-2.5 xl:left-7 xl:w-14 xl:h-14 flex items-center justify-center">3</p>
+                            <img src="Assets/Images/stages/3.png" alt="">
+                            <div class="absolute flex flex-col bottom-7 w-full px-5 gap-4 xl:gap-6 z-[1]">
+                                <p class="text-xl xl:text-2xl">Монтаж оборудования.</p>
+                                <p class="text-sm xl:text-base">На этом этапе устанавливаются электрические щиты, насосные станции, системы вентиляции и кондиционирования, системы отопления и водоснабжения, системы пожарной безопасности и другое оборудование.</p>
+                            </div>
+                            <div class="absolute bottom-0 w-full h-full stages"></div>
+                        </div>
+                        <div class="relative rounded-[10px] overflow-hidden">
+                            <p class="bg-white text-[#FA4F19] rounded-full font-semibold text-3xl md:text-4xl xl:text-6xl absolute top-2.5 w-10 h-10 left-2.5 xl:left-7 xl:w-14 xl:h-14 flex items-center justify-center">4</p>
+                            <img src="Assets/Images/stages/4.png" alt="">
+                            <div class="absolute flex flex-col bottom-7 w-full px-5 gap-4 xl:gap-6 z-[1]">
+                                <p class="text-xl xl:text-2xl">Подключение и настройка.</p>
+                                <p class="text-sm xl:text-base">После установки оборудования проводится его подключение к электрической сети, настраиваются параметры работы систем, выполняется испытание и проверка их работоспособности.</p>
+                            </div>
+                            <div class="absolute bottom-0 w-full h-full stages"></div>
+                        </div>
+                        <div class="relative rounded-[10px] overflow-hidden">
+                            <p class="bg-white text-[#FA4F19] rounded-full font-semibold text-3xl md:text-4xl xl:text-6xl absolute top-2.5 w-10 h-10 left-2.5 xl:left-7 xl:w-14 xl:h-14 flex items-center justify-center">5</p>
+                            <img src="Assets/Images/stages/5.png" alt="">
+                            <div class="absolute flex flex-col bottom-7 w-full px-5 gap-4 xl:gap-6 z-[1]">
+                                <p class="text-xl xl:text-2xl">Пусконаладочные работы.</p>
+                                <p class="text-sm xl:text-base">Включают в себя проверку работоспособности систем, настройку их работы в соответствии с требованиями заказчика, исправление возможных неполадок.</p>
+                            </div>
+                            <div class="absolute bottom-0 w-full h-full stages"></div>
+                        </div>
+                        <div class="relative rounded-[10px] overflow-hidden">
+                            <p class="bg-white text-[#FA4F19] rounded-full font-semibold text-3xl md:text-4xl xl:text-6xl absolute top-2.5 w-10 h-10 left-2.5 xl:left-7 xl:w-14 xl:h-14 flex items-center justify-center">6</p>
+                            <img src="Assets/Images/stages/6.png" alt="">
+                            <div class="absolute flex flex-col bottom-7 w-full px-5 gap-4 xl:gap-6 z-[1]">
+                                <p class="text-xl xl:text-2xl">Сдача объекта.</p>
+                                <p class="text-sm xl:text-base">По завершении всех работ производится приемка систем заказчиком, составляется акт сдачи-приемки и передается эксплуатационная документация.</p>
+                            </div>
+                            <div class="absolute bottom-0 w-full h-full stages"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-[#838383] text-sm xl:text-base max-w-[936px]">*Монтаж инженерных коммуникаций требует высокой квалификации и опыта специалистов. Поэтому рекомендуется обращаться к профессиональным компаниям, специализирующимся на монтаже инженерных коммуникаций, чтобы обеспечить надежную и безопасную работу систем.</p>
+            </div>
+        </div>
+    </main>
 
     <footer>
 
