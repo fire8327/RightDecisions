@@ -22,10 +22,10 @@
             </a>
             <div id="menu" class="flex max-lg:w-full max-lg:bg-white max-lg:absolute max-lg:left-0 max-lg:top-0 max-lg:-translate-y-full max-lg:flex-col max-lg:px-7 max-lg:py-6 max-lg:h-fit max-lg:z-20 transition-transform duration-500 lg:items-center gap-14 lg:gap-20 xl:gap-32 Montserrat font-semibold">
                 <div class="flex max-lg:flex-col lg:items-center gap-7 xl:gap-12 text-[#373737]">
-                    <a href="">О компании</a>
-                    <a href="">Этапы работы</a>
-                    <a href="">Преимущества</a>
-                    <a href="">Контакты</a>
+                    <a href="#about">О компании</a>
+                    <a href="#stages">Этапы работы</a>
+                    <a href="#advantages">Преимущества</a>
+                    <a href="#contacts">Контакты</a>
                 </div>
                 <div class="flex items-center gap-4">
                     <a href="tel:8-926-520-07-97">
@@ -45,10 +45,10 @@
             <div class="container mx-auto px-5 h-fit flex flex-col gap-7 md:gap-8 xl:gap-9 text-white">
                 <p class="font-semibold text-3xl md:text-5xl xl:text-[56px] max-w-[908px]">Инженерные Системы: Мастерство в каждой детале</p>
                 <p class="text-sm xl:text-base max-w-[878px]">На протяжении многих лет мы успешно воплощаем амбициозные проекты, где эффективность, надежность и современные технологии играют ключевую роль. Наша команда экспертов гарантирует, что каждая инженерная система, которую мы разрабатываем и устанавливаем, отвечает самым высоким стандартам качества.</p>
-                <a href="" class="bg-[#FA4F19] py-[15px] md:py-4 xl:py-[18px] px-9 md:px-10 xl:px-12 text-sm md:text-xl xl:text-[22px] rounded-[40px] w-fit font-medium">Узнать больше</a>
+                <a href="#about" class="bg-[#FA4F19] py-[15px] md:py-4 xl:py-[18px] px-9 md:px-10 xl:px-12 text-sm md:text-xl xl:text-[22px] rounded-[40px] w-fit font-medium">Узнать больше</a>
             </div>
         </div>
-        <div class="container mx-auto px-5 flex flex-col pt-[50px] md:pt-20 xl:pt-[110px] pb-[100px] md:pb-[140px] xl:pb-[180px] gap-[100px] md:gap-[140px] xl:gap-[180px]">
+        <div class="container mx-auto px-5 flex flex-col pt-[50px] md:pt-20 xl:pt-[110px] pb-[100px] md:pb-[140px] xl:pb-[180px] gap-[100px] md:gap-[140px] xl:gap-[180px]" id="about">
             <div class="flex flex-col gap-5 lg:gap-4">
                 <p class="relative text-[#FA4F19] text-sm xl:text-base font-bold w-fit uppercase">
                     <span>О нас</span>
@@ -63,7 +63,7 @@
                     <img src="Assets/Images/about/mobile.png" alt="" class="w-full md:hidden">
                 </div>
             </div>
-            <div class="flex flex-col gap-5 md:gap-7 xl:gap-8">
+            <div class="flex flex-col gap-5 md:gap-7 xl:gap-8" id="stages">
                 <p class="relative text-[#FA4F19] text-sm xl:text-base font-bold w-fit uppercase">
                     <span>Этапы работы</span>
                     <span class="max-[1439px]:hidden w-[72px] h-0.5 bg-[#1D2130] absolute top-1/2 -translate-y-1/2 -left-24"></span>
@@ -129,7 +129,7 @@
                 </div>
                 <p class="text-[#838383] text-sm xl:text-base max-w-[936px]">*Монтаж инженерных коммуникаций требует высокой квалификации и опыта специалистов. Поэтому рекомендуется обращаться к профессиональным компаниям, специализирующимся на монтаже инженерных коммуникаций, чтобы обеспечить надежную и безопасную работу систем.</p>
             </div>
-            <div class="flex flex-col gap-5 md:gap-7 xl:gap-8">
+            <div class="flex flex-col gap-5 md:gap-7 xl:gap-8" id="advantages">
                 <p class="relative text-[#FA4F19] text-sm xl:text-base font-bold w-fit uppercase">
                     <span>Преимущества</span>
                     <span class="max-[1439px]:hidden w-[72px] h-0.5 bg-[#1D2130] absolute top-1/2 -translate-y-1/2 -left-24"></span>
@@ -186,7 +186,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full py-[100px] text-white bg-cover bg-center bg-[url(Assets/Images/contacts/bg.png)]">
+        <div class="w-full py-[100px] text-white bg-cover bg-center bg-[url(Assets/Images/contacts/bg.png)]" id="contacts">
             <div class="flex flex-col gap-10 md:gap-6 xl:gap-2.5 container mx-auto px-5">
                 <p class="font-bold text-3xl md:text-5xl xl:text-[56px]">Контакты</p>
                 <div class="flex max-lg:flex-col gap-14 md:gap-20 xl:gap-[87px]">
@@ -203,11 +203,15 @@
                             </a>
                         </div>
                     </div>
-                    <form class="flex flex-col w-full lg:max-w-[468px] gap-16">
+                    <form class="flex flex-col w-full lg:max-w-[468px] gap-16" id="form" autocomplete="off">
                         <p class="text-xl xl:text-2xl">Связаться с нами</p>
                         <div class="flex flex-col gap-6">
-                            <input type="text" class="border-b border-[#FAFAFA] focus:outline-none text-sm xl:text-base bg-transparent pb-4" placeholder="Введите имя">
-                            <input type="text" class="border-b border-[#FAFAFA] focus:outline-none text-sm xl:text-base bg-transparent pb-4" placeholder="Введите телефон">
+                            <div class="w-full flex flex-col gap-2">                                
+                                <input id="name" name="name" type="text" type="text" class="w-full border-b border-[#FAFAFA] focus:outline-none text-sm xl:text-base bg-transparent pb-4" placeholder="Введите имя">
+                            </div>
+                            <div class="w-full flex flex-col gap-2">
+                                <input id="number" name="number" class="w-full border-b border-[#FAFAFA] focus:outline-none text-sm xl:text-base bg-transparent pb-4" placeholder="Введите телефон">
+                            </div>
                         </div>
                         <div class="flex flex-col gap-8 items-center">
                             <button class="w-full rounded-[10px] border border-[#FAFAFA] py-3">Получить консультацию</button>
@@ -220,7 +224,7 @@
     </main>
 
     <footer class="w-full bg-white py-10">
-        <div class="container mx-auto flex items-center justify-between px-5 max-lg:flex-col text-[#373737]">
+        <div class="container mx-auto flex items-center justify-between px-5 max-lg:flex-col max-lg:gap-4 text-[#373737]">
             <p>© Правильное решение, 2023</p>
             <a href="" class="hover:text-[#373737]/50 transition-colors duration-500">Политика конфиденциальности</a>
             <a href="" class="hover:text-[#373737]/50 transition-colors duration-500">Пользовательское соглашение</a>
@@ -233,7 +237,9 @@
     
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js" 
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>    
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<script src="Assets/JS/custom.js"></script>
 </body>
 </html>
