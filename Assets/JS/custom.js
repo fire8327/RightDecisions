@@ -50,6 +50,11 @@ function Validate() {
           errorMessage: 'Поле Имя обязательно к заполнению',
       },
       {
+        rule: 'customRegexp',
+        value: /^[А-Я]+$/i,      
+        errorMessage: 'Поле Имя должно содержать только кириллицу',
+      },
+      {
         rule: 'minLength',
         value: 2,      
         errorMessage: 'Поле Имя должно иметь минимум 2 символа',
