@@ -57,3 +57,37 @@ function Validate() {
   ]);
 }
 Validate()
+
+/* sumbit */
+const token = "5900500643:AAHxmzfAniRFII_82Tj9o2kzmLNRZFM1Ikg"
+const chat_id = "-4059528802"
+const url = `https://api.telegram.org/bot${token}/sendMessage`
+$("#form").submit((e)=> {
+  e.preventDefault();
+  if(validate.isValid) {
+    let message = `<b>Заявка с сайта!</b>\n`;
+    message += `<b>Имя:</b> ${$("#name").val()}\n`;
+    message += `<b>Номер телефона:</b> ${$("#number").val()}\n`;
+
+    console.log(message);
+
+    axios.post(url, {
+        chat_id: chat_id,
+        parse_mode: 'html',
+        text: message
+    })
+    .then((res) => {
+        $("#form")[0].reset()
+        $("#success").show(500)
+        setTimeout(() => {
+            $("#success").hide(500)
+        }, 3000);
+    })
+    .catch((err) => {
+        console.warn(err);
+    })
+    .finally(() => {
+        console.log('Конец');
+    })       
+}     
+})

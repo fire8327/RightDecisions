@@ -206,11 +206,17 @@
                     <form class="flex flex-col w-full lg:max-w-[468px] gap-16" id="form" autocomplete="off">
                         <p class="text-xl xl:text-2xl">Связаться с нами</p>
                         <div class="flex flex-col gap-6">
-                            <div class="w-full flex flex-col gap-2">                                
+                            <div class="w-full flex flex-col">                                
                                 <input id="name" name="name" type="text" type="text" class="w-full border-b border-[#FAFAFA] focus:outline-none text-sm xl:text-base bg-transparent pb-4" placeholder="Введите имя">
                             </div>
-                            <div class="w-full flex flex-col gap-2">
+                            <div class="w-full flex flex-col">
                                 <input id="number" name="number" class="w-full border-b border-[#FAFAFA] focus:outline-none text-sm xl:text-base bg-transparent pb-4" placeholder="Введите телефон">
+                            </div>
+                            <div id="success" class="hidden">
+                                <div class="fixed top-10 right-10 z-10 flex items-center gap-4 bg-black text-white rounded-[10px] py-2 px-4">
+                                    <img src="Assets/Images/icons/info.svg" alt="" class="w-4">
+                                    <p>Заявка успешно создана</p>
+                                </div>
                             </div>
                         </div>
                         <div class="flex flex-col gap-8 items-center">
@@ -223,7 +229,7 @@
         </div>
     </main>
 
-    <footer class="w-full bg-white py-10">
+    <footer class="w-full bg-white py-9 xl:py-7">
         <div class="container mx-auto flex items-center justify-between px-5 max-lg:flex-col max-lg:gap-4 text-[#373737]">
             <p>© Правильное решение, 2023</p>
             <a href="" class="hover:text-[#373737]/50 transition-colors duration-500">Политика конфиденциальности</a>
