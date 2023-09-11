@@ -1,6 +1,6 @@
 /*jshint esnext: true */
 /* navigation */
-$("#toggler").click(()=>{
+$("#toggler, .links").click(()=>{
   $("#menu").toggleClass("max-lg:-translate-y-full")
   $("#menu").toggleClass("max-lg:top-0")
   $("#menu").toggleClass("max-lg:top-full")
@@ -12,15 +12,17 @@ $("#toggler").click(()=>{
   $("#overlay").toggleClass("hidden")
 })
 
+
 /* links */
 $('a[href^="#"]').on('click', function() {
   $("body").removeClass("overflow-hidden")
   let href = $(this).attr('href')
     $('html, body').animate({
-        scrollTop: $(href).offset().top - 0
+        scrollTop: $(href).offset().top - 50
     })
   return false
 });
+
 
 /* validate */
 const validate = new JustValidate('#form', {
@@ -63,6 +65,7 @@ function Validate() {
 }
 Validate()
 
+
 /* sumbit */
 const token = "5900500643:AAHxmzfAniRFII_82Tj9o2kzmLNRZFM1Ikg"
 const chat_id = "-4059528802"
@@ -96,3 +99,13 @@ $("#form").submit((e)=> {
     })       
 }     
 })
+
+
+/* grid-stages */
+$(document).ready(() => {
+  let gridHeight = $(".grid-stages:eq(2)").height()
+    $(".grid-stages").each((index, el) => {
+      $(el).addClass(`h-[${gridHeight}px]`)
+  }) 
+})
+
